@@ -11,6 +11,16 @@ class MySQLConnection:
                                     charset = 'utf8mb4',
                                     cursorclass = pymysql.cursors.DictCursor,
                                     autocommit = True)
+        
+        # python anywhere mysql login
+        # connection = pymysql.connect(host = 'jessethommes.mysql.pythonanywhere-services.com',
+        #                             user = 'jessethommes',
+        #                             password = 'rootroot',
+        #                             db = db,
+        #                             charset = 'utf8mb4',
+        #                             cursorclass = pymysql.cursors.DictCursor,
+        #                             autocommit = True)
+        
         # establish the connection to the database
         self.connection = connection
     # the method to query the database

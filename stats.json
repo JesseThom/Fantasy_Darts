@@ -1,7 +1,7 @@
 [
     {
-        "FirstName": "Adam",
-        "LastName": "Pohlkamp",
+        "first_name": "Adam",
+        "last_name": "Pohlkamp",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -14,8 +14,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Alex",
-        "LastName": "Hayes",
+        "first_name": "Alex",
+        "last_name": "Hayes",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -28,8 +28,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Andrew",
-        "LastName": "Rueckert",
+        "first_name": "Andrew",
+        "last_name": "Rueckert",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -42,8 +42,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Bill",
-        "LastName": "Waytashek",
+        "first_name": "Bill",
+        "last_name": "Waytashek",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -56,8 +56,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Bobby",
-        "LastName": "Mager",
+        "first_name": "Bobby",
+        "last_name": "Mager",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -70,8 +70,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Brandon",
-        "LastName": "Kiel",
+        "first_name": "Brandon",
+        "last_name": "Kiel",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -84,8 +84,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Brock",
-        "LastName": "Kieffer",
+        "first_name": "Brock",
+        "last_name": "Kieffer",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -98,8 +98,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Chris",
-        "LastName": "Mayer",
+        "first_name": "Chris",
+        "last_name": "Mayer",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -112,8 +112,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Clint",
-        "LastName": "Sullivan",
+        "first_name": "Clint",
+        "last_name": "Sullivan",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -126,8 +126,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Cody",
-        "LastName": "Hoffman",
+        "first_name": "Cody",
+        "last_name": "Hoffman",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -140,8 +140,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Eric",
-        "LastName": "Stuckmeyer",
+        "first_name": "Eric",
+        "last_name": "Stuckmeyer",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -154,8 +154,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Jake",
-        "LastName": "Plante",
+        "first_name": "Jake",
+        "last_name": "Plante",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -168,8 +168,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Jason",
-        "LastName": "Blaisdell",
+        "first_name": "Jason",
+        "last_name": "Blaisdell",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -182,8 +182,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Jeff",
-        "LastName": "Gotvald",
+        "first_name": "Jeff",
+        "last_name": "Gotvald",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -196,8 +196,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Jeremy",
-        "LastName": "Stager",
+        "first_name": "Jeremy",
+        "last_name": "Stager",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -210,8 +210,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Jesse",
-        "LastName": "Thommes",
+        "first_name": "Jesse",
+        "last_name": "Thommes",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -224,8 +224,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Jesse",
-        "LastName": "Wirth",
+        "first_name": "Jesse",
+        "last_name": "Wirth",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -238,8 +238,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Joe",
-        "LastName": "Ziwicki",
+        "first_name": "Joe",
+        "last_name": "Ziwicki",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -252,8 +252,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Joel",
-        "LastName": "Bollig",
+        "first_name": "Joel",
+        "last_name": "Bollig",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -266,8 +266,8 @@
         "Week": 0
     },
     {
-        "FirstName": "John",
-        "LastName": "Enneking",
+        "first_name": "John",
+        "last_name": "Enneking",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -280,8 +280,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Kayla",
-        "LastName": "Gall",
+        "first_name": "Kayla",
+        "last_name": "Gall",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -294,8 +294,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Kevin",
-        "LastName": "Mitchell",
+        "first_name": "Kevin",
+        "last_name": "Mitchell",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -308,8 +308,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Kurt",
-        "LastName": "Gallus",
+        "first_name": "Kurt",
+        "last_name": "Gallus",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -322,8 +322,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Matt",
-        "LastName": "Anderson",
+        "first_name": "Matt",
+        "last_name": "Anderson",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -336,8 +336,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Ryan",
-        "LastName": "Walberg",
+        "first_name": "Ryan",
+        "last_name": "Walberg",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -350,8 +350,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Ryan",
-        "LastName": "Helmin",
+        "first_name": "Ryan",
+        "last_name": "Helmin",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -364,8 +364,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Sam",
-        "LastName": "Kasper",
+        "first_name": "Sam",
+        "last_name": "Kasper",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -378,8 +378,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Sam",
-        "LastName": "Keeler",
+        "first_name": "Sam",
+        "last_name": "Keeler",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -392,8 +392,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Scott",
-        "LastName": "Baker",
+        "first_name": "Scott",
+        "last_name": "Baker",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -406,8 +406,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Tanner",
-        "LastName": "Miller",
+        "first_name": "Tanner",
+        "last_name": "Miller",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -420,8 +420,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Troy",
-        "LastName": "Vannurden",
+        "first_name": "Troy",
+        "last_name": "Vannurden",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
@@ -434,8 +434,8 @@
         "Week": 0
     },
     {
-        "FirstName": "Wyatt",
-        "LastName": "Ziwicki",
+        "first_name": "Wyatt",
+        "last_name": "Ziwicki",
         "Hat": 0,
         "HTon": 0,
         "LTon": 0,
