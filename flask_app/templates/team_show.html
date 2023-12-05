@@ -39,16 +39,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark mb-1 mx-5" href="/logout">Logout</a>
                         </li>
-                        <!-- }
-                        @if(Context.Session.GetInt32("uuid")== 1)
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark mb-1 mx-5" href="/">Update</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark mb-1 mx-5" href="/">Disable</a>
-                            </li>
-                        } -->
                     </ul>
                 </div>
             </div>
@@ -59,24 +49,28 @@
         <div class="d-flex justify-content-between">
 
             <h2 class="text-center mb-3">{{team.team_name}}</h2>
-            <h2>Week Points: {{team.team_update}}</h2>
+            {%if players%}
+                <h2>Week {{players[0].week}} Points : {{team.team_update}}</h2>
+            {%endif%}
             <h2>Total Points: {{team.team_points}}</h2>
         </div>
         <table class="table table-dark table-striped">
+            <thead>
+                <th>Player</th>
+                <th>Points</th>
+                <th></th>
+            </thead>
             <tbody>
                 {%for player in players%}
                 <tr>
-                    <th>{{player.first_name}} {{player.last_name}}</th>
-                    <td>{{player.player_points}}</td>
-                    {%if team.enable == 0 %}
-                    <td class="d-flex justify-content-center"><a class="btn btn-danger" href="/player/remove/{{player.id}}">Delete</a></td>
-                    {%else%}
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    {%endif%}
+                    <!-- <th>{{player.first_name}} {{player.last_name}}</th> -->
+                    <th><a class="nav-link" href="/player/{{player.id}}">{{player.first_name}} {{player.last_name}}</a></th>
+                    <td class="text-start">{{player.player_points}}</td>
+                        {%if team.enable == 0 %}
+                            <td class="d-flex justify-content-end"><a class="btn btn-danger" href="/player/remove/{{player.id}}">Delete</a></td>
+                        {%else%}
+                            <td></td>
+                        {%endif%}
                     {%endfor%}
                 </tr>
             </tbody>

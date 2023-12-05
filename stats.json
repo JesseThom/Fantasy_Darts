@@ -2,21 +2,21 @@
     {
         "first_name": "Adam",
         "last_name": "Pohlkamp",
-        "Hat": 0,
+        "Hat": 1,
         "HTon": 0,
-        "LTon": 0,
+        "LTon": 1,
         "Whrse": 0,
         "_9MR": 0,
         "_8MR": 0,
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Alex",
         "last_name": "Hayes",
-        "Hat": 0,
+        "Hat": 1,
         "HTon": 0,
         "LTon": 0,
         "Whrse": 0,
@@ -25,12 +25,12 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Andrew",
         "last_name": "Rueckert",
-        "Hat": 0,
+        "Hat": 1,
         "HTon": 0,
         "LTon": 0,
         "Whrse": 0,
@@ -39,12 +39,12 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Bill",
         "last_name": "Waytashek",
-        "Hat": 0,
+        "Hat": 1,
         "HTon": 0,
         "LTon": 0,
         "Whrse": 0,
@@ -53,12 +53,12 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Bobby",
         "last_name": "Mager",
-        "Hat": 0,
+        "Hat": 1,
         "HTon": 0,
         "LTon": 0,
         "Whrse": 0,
@@ -67,7 +67,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Brandon",
@@ -81,7 +81,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Brock",
@@ -95,7 +95,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Chris",
@@ -109,7 +109,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Clint",
@@ -123,7 +123,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Cody",
@@ -137,7 +137,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Eric",
@@ -151,7 +151,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Jake",
@@ -165,7 +165,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Jason",
@@ -179,7 +179,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Jeff",
@@ -193,7 +193,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Jeremy",
@@ -207,7 +207,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Jesse",
@@ -221,7 +221,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Jesse",
@@ -235,7 +235,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Joe",
@@ -249,7 +249,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Joel",
@@ -263,7 +263,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "John",
@@ -277,7 +277,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Kayla",
@@ -291,7 +291,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Kevin",
@@ -305,7 +305,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Kurt",
@@ -319,7 +319,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Matt",
@@ -333,7 +333,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Ryan",
@@ -347,7 +347,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Ryan",
@@ -361,7 +361,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Sam",
@@ -375,7 +375,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Sam",
@@ -389,7 +389,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Scott",
@@ -403,7 +403,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Tanner",
@@ -417,7 +417,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Troy",
@@ -431,7 +431,7 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     },
     {
         "first_name": "Wyatt",
@@ -445,6 +445,6 @@
         "_7MR": 0,
         "_6MR": 0,
         "_5MR": 0,
-        "Week": 0
+        "week": 1
     }
 ]

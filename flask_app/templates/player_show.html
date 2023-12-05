@@ -17,8 +17,8 @@
             <div class="container">
                 <h4 class="navbar-brand"> Fantasy Dart League</h4>
                 <h4 class="navbar-brand ms-5">Welcome {{session['name']}}</h4>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -39,49 +39,62 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark mb-1 mx-5" href="/logout">Logout</a>
                         </li>
-                        {%if session['uuid'] == 1%}
-                            <li class="nav-item">
-                                <a class="nav-link text-dark mb-1 mx-5" href="/player/update">Update</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark mb-1 mx-5" href="/disable">Disable</a>
-                            </li>
-                        {%endif%}
-                        
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-
     <div class="whitebox col-sm-10 col-lg-6 mx-auto p-3">
-        <h2 class="text-center mb-3">Fantasy Point Standings</h2>
-        <table class="table table-dark table-striped table-hover">
-            <thead>
-                <th>Rank</th>
-                <th>Team Name</th>
-                <th>This Week Points</th>
-                <th>Total Points</th>
-            </thead>
-            <tbody>
-                {% for team in teams%}
-                <tr>
-                    <td>{{loop.index}}</td>
-                    <td>{{team.team_name}}</a></td>
-                    <td>{{team.team_update}}</td>
-                    <td>{{team.team_points}}</td>
-                </tr>
-                {%endfor%}
-            </tbody>
-            
+        <div class="d-flex justify-content-around">
+
+            <h2 class="text-center mb-3">{{player.first_name}} {{player.last_name}}</h2>
+            <h2>Week: {{player.week}} </h2>
+        </div>
+        <table class="table table-dark table-striped">
+            <tr>
+                <th>Points</th>
+                <td>{{player.player_points}}</td>
+            </tr>
+            <tr>
+                <th>Hat Tricks</th>
+                <td>{{player.Hat}}</td>
+            </tr>
+            <tr>
+                <th>Low Tons</th>
+                <td>{{player.LTon}}</td>
+            </tr>
+            <tr>
+                <th>White Horse</th>
+                <td>{{player.Whrse}}</td>
+            </tr>
+            <tr>
+                <th>High Tons</th>
+                <td>{{player.HTon}}</td>
+            </tr>
+            <tr>
+                <th>9 Mark</th>
+                <td>{{player._9MR}}</td>
+            </tr>
+            <tr>
+                <th>8 Mark</th>
+                <td>{{player._8MR}}</td>
+            </tr>
+            <tr>
+                <th>7 Mark</th>
+                <td>{{player._7MR}}</td>
+            </tr>
+            <tr>
+                <th>6 Mark</th>
+                <td>{{player._6MR}}</td>
+            </tr>
+            <tr>
+                <th>5 Mark</th>
+                <td>{{player._5MR}}</td>
+            </tr>
         </table>
-        <div class="text-center">
-            {%if team_view == 0%}
-                <a class="btn btn-secondary mt-3" href="/team/new">Create Team</a>
-            {%else%}
-                <a class="btn btn-secondary mt-3" href="/team/{{session['uuid']}}">View Team</a>
-            {%endif%}
+        <div class="d-flex justify-content-center">
+            <a href="/team/{{session['uuid']}}" class="btn btn-secondary">Back</a>
         </div>
     </div>
 </body>

@@ -4,22 +4,22 @@ import pymysql.cursors
 class MySQLConnection:
     def __init__(self, db):
         # change the user and password as needed
-        connection = pymysql.connect(host = 'localhost',
-                                    user = 'root', 
-                                    password = 'root', 
-                                    db = db,
-                                    charset = 'utf8mb4',
-                                    cursorclass = pymysql.cursors.DictCursor,
-                                    autocommit = True)
-        
-        # python anywhere mysql login
-        # connection = pymysql.connect(host = 'jessethommes.mysql.pythonanywhere-services.com',
-        #                             user = 'jessethommes',
-        #                             password = 'rootroot',
+        # connection = pymysql.connect(host = 'localhost',
+        #                             user = 'root', 
+        #                             password = 'root', 
         #                             db = db,
         #                             charset = 'utf8mb4',
         #                             cursorclass = pymysql.cursors.DictCursor,
         #                             autocommit = True)
+        
+        # pythonanywhere mysql login
+        connection = pymysql.connect(host = 'jessethommes.mysql.pythonanywhere-services.com',
+                                    user = 'jessethommes',
+                                    password = 'rootroot',
+                                    db = db,
+                                    charset = 'utf8mb4',
+                                    cursorclass = pymysql.cursors.DictCursor,
+                                    autocommit = True)
         
         # establish the connection to the database
         self.connection = connection

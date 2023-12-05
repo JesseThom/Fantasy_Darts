@@ -17,6 +17,7 @@ class Player:
         self._5MR = data['_5MR']
         self.HTon = data['HTon']
         self.player_points = data['player_points']
+        self.week = data['week']
         self.teams_id = data['teams_id']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
@@ -25,7 +26,7 @@ class Player:
     @classmethod
     def create(cls,data):
         #1 query statement
-        query = "INSERT INTO players (first_name, last_name, LTon, Hat, Whrse, _9MR, _8MR, _7MR, _6MR, _5MR, HTon, player_points) VALUES (%(first_name)s,%(last_name)s,%(LTon)s,%(Hat)s,%(Whrse)s,%(_9MR)s,%(_8MR)s,%(_7MR)s,%(_6MR)s,%(_5MR)s,%(HTon)s,%(player_points)s);"
+        query = "INSERT INTO players (first_name, last_name, LTon, Hat, Whrse, _9MR, _8MR, _7MR, _6MR, _5MR, HTon, player_points, week) VALUES (%(first_name)s,%(last_name)s,%(LTon)s,%(Hat)s,%(Whrse)s,%(_9MR)s,%(_8MR)s,%(_7MR)s,%(_6MR)s,%(_5MR)s,%(HTon)s,%(player_points)s,%(week)s);"
         #2 contact the data
         player_id = connectToMySQL(DATABASE).query_db(query, data) 
         return player_id
@@ -74,7 +75,7 @@ class Player:
 #U
     @classmethod
     def update_one(cls,data):
-        query = "UPDATE players SET LTon = %(LTon)s,Hat =%(Hat)s,Whrse = %(Whrse)s,_9MR = %(_9MR)s,_8MR = %(_8MR)s,_7MR = %(_7MR)s,_6MR = %(_6MR)s,_5MR = %(_5MR)s,HTon = %(HTon)s,player_points = %(player_points)s WHERE id = %(id)s;"
+        query = "UPDATE players SET LTon = %(LTon)s,Hat =%(Hat)s,Whrse = %(Whrse)s,_9MR = %(_9MR)s,_8MR = %(_8MR)s,_7MR = %(_7MR)s,_6MR = %(_6MR)s,_5MR = %(_5MR)s,HTon = %(HTon)s,player_points = %(player_points)s,week=%(week)s WHERE id = %(id)s;"
         return connectToMySQL(DATABASE).query_db(query,data)
     
     @classmethod
