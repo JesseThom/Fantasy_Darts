@@ -56,7 +56,8 @@ def player_list():
     else:
         data = {'id':team.id} 
         count = Player.count_players(data)
-    # print(count['player_count'])
+        if team.enable == 1:
+            count = {'player_count':5}
     return render_template("player_list.html",players=players,count=count)
 
 @app.route('/logout')

@@ -68,7 +68,8 @@
                 {% for team in teams%}
                 <tr>
                     <td>{{loop.index}}</td>
-                    <td>{{team.team_name}}</a></td>
+                    <!-- <td>{{team.team_name}}</td> -->
+                    <td><a class="nav-link" href="/team/{{team.id}}">{{team.team_name}}</a></td>
                     <td>{{team.team_update}}</td>
                     <td>{{team.team_points}}</td>
                 </tr>
@@ -78,9 +79,11 @@
         </table>
         <div class="text-center">
             {%if team_view == 0%}
-                <a class="btn btn-secondary mt-3" href="/team/new">Create Team</a>
+                {%if session['uuid']!=1%}
+                    <a class="btn btn-secondary mt-3" href="/team/new">Create Team</a>
+                {%endif%}
             {%else%}
-                <a class="btn btn-secondary mt-3" href="/team/{{session['uuid']}}">View Team</a>
+                <a class="btn btn-secondary mt-3" href="/my_team">View My Team</a>
             {%endif%}
         </div>
     </div>

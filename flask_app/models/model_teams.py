@@ -25,7 +25,14 @@ class Team:
     @classmethod
     def get_one(cls, data):
         query = "SELECT * FROM teams WHERE users_id = %(id)s;"
-        #returns list of dictionaries
+        results = connectToMySQL(DATABASE).query_db(query,data)
+        if not results:
+            return False
+        return cls(results[0])
+    
+    @classmethod
+    def get_one_by_id(cls, data):
+        query = "SELECT * FROM teams WHERE id = %(id)s;"
         results = connectToMySQL(DATABASE).query_db(query,data)
         if not results:
             return False

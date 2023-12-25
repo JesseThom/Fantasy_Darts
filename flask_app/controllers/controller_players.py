@@ -1,4 +1,4 @@
-from flask import render_template, redirect, session, request
+from flask import render_template, redirect, session, request, flash
 from flask_app import app
 import json
 
@@ -52,15 +52,18 @@ def player_add(id):
     temp = Player.get_one_by_id(data)
     if not temp.teams_id:
         Player.add_player_to_team(data)
+        flash(f"Added {temp.first_name} {temp.last_name}","err_taken")
+    else:
+        flash(f"{temp.first_name} {temp.last_name} is on another team, Choose again","err_taken")
 
-    return redirect(f"/team/{team.users_id}")
+    return redirect("/my_team")
 
 # route to remove player from team
 @app.route("/player/remove/<int:id>")
 def player_remove(id):
     data={'id':id}
     Player.remove_player_from_team(data)
-    return redirect (f"/team/{session['uuid']}")
+    return redirect ("/my_team")
 
 # update player points
 def update_points(data):
@@ -92,13 +95,6 @@ def update_team_points():
                 break
             temp_points = player.player_points + temp_points
 
-        # if players:
-        #     for i in range(0,4):
-        #         temp_points = players[i].player_points + temp_points
-                
-        # else:
-        #     print("No players on team")
-        
         team_points = team.team_points + temp_points
         data = {
             'id':team.id,
@@ -113,100 +109,9 @@ def disable():
     Player.reset_points()
     return redirect('/dashboard')
 
-
-# update team points
-# def update_team_points():
-#     teams = Team.get_all()
-
-#     for team in teams:
-#         id = {'id': team.id}
-#         players = Player.get_all_by_team(id)
-#         team_points = 0
-
-#         for player in players:
-#             new_points = player.player_points + team_points
-
-#         team_points = team.team_points + new_points
-#         data = {
-#             'id':team.id,
-#             'team_points': team_points,
-#             'team_update': new_points
-#         }
-#         Team.update_one(data)
-
 #route to show individual player
 @app.route('/player/<int:id>')
 def player_show(id):
     data = {'id': id}
     player = Player.get_one_by_id(data)
     return render_template("player_show.html", player=player)
-
-
-# not used-----------------
-# def update_player(data,player):
-#     print("-------------update player---------------")
-#     temp_points = 0
-#     temp_points = temp_points + (data['Hat'] * 2)
-#     temp_points = temp_points + (data['LTon'])
-#     temp_points = temp_points + (data['HTon'] * 3)
-#     temp_points = temp_points + (data['Whrse'] * 5)
-#     temp_points = temp_points + (data['_9MR'] * 4)
-#     temp_points = temp_points + (data['_8MR'] * 3)
-#     temp_points = temp_points + (data['_7MR'] * 2)
-#     temp_points = temp_points + (data['_6MR'] * 2)
-#     temp_points = temp_points + (data['_5MR'])
-
-#     new_data = {
-#         **data,
-#         'id': player.id,
-#         'Hat': player.Hat + data['Hat'],
-#         'LTon': player.LTon + data['LTon'],
-#         'HTon': player.HTon + data['HTon'],
-#         'Whrse': player.Whrse + data['Whrse'],
-#         '_9MR': player._9MR + data['_9MR'],
-#         '_8MR': player._8MR + data['_8MR'],
-#         '_7MR': player._7MR + data['_7MR'],
-#         '_6MR': player._6MR + data['_6MR'],
-#         '_5MR': player._5MR + data['_5MR'],
-#         'player_points':temp_points
-#     }
-#route to new player form page
-# @app.route('/player/new')
-# def player_new():
-#     return render_template("player_new.html")
-
-#route to submit create player form
-# @app.route('/player/create',methods=["post"])
-# def player_create():
-#     data = request.form
-#     player_id = Player.create(data)
-#     if player_id == False:
-#         print("Failed to create player")
-#     else:
-#         print(f"player Created at {player_id} id")
-#     return redirect('/')
-
-
-#route to edit player form
-# @app.route('/player/<int:id>/edit')
-# def player_edit(id):
-#     data = {'id': id}
-#     player = Player.get_one(data)
-#     return render_template("player_edit.html", player=player)
-
-#route to submit edit form
-# @app.route('/player/<int:id>/update',methods=['post'])
-# def player_update(id):
-#     data = {
-#         **request.form,
-#         'id':id
-#         }
-#     Player.update_one(data)
-#     return redirect('/')
-
-#delete player route
-# @app.route('/player/<int:id>/delete')
-# def player_delete(id):
-#     data = {'id': id}
-#     Player.delete_one(data)
-#     return redirect("/")
